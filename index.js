@@ -31,11 +31,11 @@ function viewCart() {
 }
 
 function total() {
-  var hex = 0
+  var totes = 0
     for (var i = 0; i < cart.length; i++){
-      hex += cart[i].itemPrice;
+      totes += cart[i].itemPrice;
     }
-    return hex
+    return totes
   // write your code here
 }
 
