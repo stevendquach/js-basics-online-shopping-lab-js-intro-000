@@ -40,14 +40,16 @@ function total() {
 }
 
 function removeFromCart(item) {
-  for (let i = 0; i < cart.length; i++){
-    if (cart[i].itemName == item){
-      return cart.splice(i,1)
-    }
+  // write your code here
+for(let i=0; i < cart.length; i++){
+  //loop exist to loop over array
+  if (cart[i].itemName === item){
+  //compares the values of the items that being searched for
+    return cart.splice(i,1)
+    //search id the index while deleting 1
   }
-    return (`That item is not in your cart.`)
-   }
-  // write your code here}
+}
+  return 'That item is not in your cart.'
 }
 
 function placeOrder(cardNumber) {
