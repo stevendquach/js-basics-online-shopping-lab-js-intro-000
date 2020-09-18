@@ -53,8 +53,8 @@ for(let i=0; i < cart.length; i++){
 }
 
 function placeOrder(cardNumber) {
+  var totals = total()
   if (cardNumber == undefined){
-    var totals = total()
     return (`Sorry, we dont't have a credit card on file for you.`) }
   else  {
     cart = []
